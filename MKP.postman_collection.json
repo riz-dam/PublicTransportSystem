@@ -1,0 +1,62 @@
+{
+	"info": {
+		"_postman_id": "038760b1-9e60-4bc4-9452-312cf21e60ad",
+		"name": "MKP",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "8159480",
+		"_collection_link": "https://red-shadow-209472.postman.co/workspace/Team-Workspace~8ddcf2c6-0854-46b0-88c9-043dea3911ba/collection/8159480-038760b1-9e60-4bc4-9452-312cf21e60ad?action=share&source=collection_link&creator=8159480"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"admin\",\n    \"password\": \"password\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "127.0.0.1:8080/login"
+			},
+			"response": []
+		},
+		{
+			"name": "Data",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2OTQ5NTUxODEsInVzZXJuYW1lIjoieW91ci11c2VybmFtZSJ9.iT9RSIs_y3sJm7jTOosUY9ACQr7MzcigI0_qvVPT2LM",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "127.0.0.1:8080/data?id=1",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"data"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
